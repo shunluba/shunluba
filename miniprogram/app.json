@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/Me/Me"
+    "pages/Me/Me",
+    "pages/PostConsume/PostConsume",
+    "pages/NearbyConsume/NearbyConsume"
   ],
   "tabBar": {
     "list": [
@@ -12,10 +14,16 @@
         "selectedIconPath": "images/first-selected.png"
       },
       {
-        "text": "首页",
+        "text": "拼伞",
+        "pagePath": "pages/NearbyConsume/NearbyConsume",
+        "iconPath": "images/consume.png",
+        "selectedIconPath": "images/consume-selected.png"
+      },
+      {
+        "text": "我",
         "pagePath": "pages/Me/Me",
-        "iconPath": "images/first.png",
-        "selectedIconPath": "images/first-selected.png"
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-selected.png"
       }
     ]
   },
@@ -25,5 +33,10 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "顺路吧",
     "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
   }
 }

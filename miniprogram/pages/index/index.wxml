@@ -11,8 +11,8 @@
 <view>
 <map
   id="map"
-  longitude="118.04613"
-  latitude="24.36845"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
   scale="14"
   controls="{{controls}}"
   bindcontroltap="controltap"
@@ -24,11 +24,12 @@
   style="width: 100%; height: 400px;"
 >
 </map>
+<!--输入到达地和目的地-->
 <wux-cell hover-class="none">
   <wux-input label="出发地" />
 </wux-cell>
 <wux-cell hover-class="none">
   <wux-input label="到达地" />
 </wux-cell>
-<wux-button block type="dark">发布拼伞</wux-button>
+<wux-button block type="dark" bindtap='postCon'>发布拼伞</wux-button>
 </view>

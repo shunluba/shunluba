@@ -1,44 +1,43 @@
 Page({
   data: {
+    longitude: 113.324520,
+    latitude: 23.099994,
     markers: [{
-      iconPath: '/resources/others.png',
       id: 0,
-      latitude: 24.36845,
-      longitude: 118.04613,
-      width: 10,
-      height: 10
-    }],
-    polyline: [{
-      points: [{
-        longitude: 118.04613,
-        latitude: 24.36845
-      }, {
-          longitude: 118.04613,
-          latitude: 24.36845
-      }],
-      color: '#FF0000DD',
-      width: 2,
-      dottedLine: true
-    }],
-    controls: [{
-      id: 1,
-      iconPath: '/resources/location.png',
-      position: {
-        left: 0,
-        top: 300 - 50,
-        width: 50,
-        height: 50
-      },
-      clickable: true
+      iconPath: "../../images/icon_cur_position.png",
+      latitude: 23.099994,
+      longitude: 113.324520,
+      width: 50,
+      height: 50
     }]
   },
-  regionchange(e) {
-    console.log(e.type)
+  onLoad: function () {
+    var that = this;
+    wx.getLocation({
+      type: "wgs84",
+      success: function (res) {
+        var latitude = res.latitude;
+        var longitude = res.longitude;
+        //console.log(res.latitude);
+        that.setData({
+          latitude: res.latitude,
+          longitude: res.longitude,
+          markers: [{
+            latitude: res.latitude,
+            longitude: res.longitude
+          }]
+        })
+      }
+    })
   },
-  markertap(e) {
-    console.log(e.markerId)
+  onReady: function () {
+
   },
-  controltap(e) {
-    console.log(e.controlId)
-  }
+
+  //跳转到发布拼伞页面
+  postCon: function (e) {
+    wx.navigateTo({
+      url: '../PostConsume/PostConsume',
+    })
+  },
 })

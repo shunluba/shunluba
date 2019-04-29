@@ -1,1 +1,65 @@
-/* pages/Me/Me.wxss */
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.userinfo {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  size: default;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  width: 200rpx;
+  color: #000;
+  margin: 20rpx;
+  overflow: hidden;
+}
+
+
+.userinfo-modify {
+  flex:1;
+  margin: 20rpx;
+}
+.userinfo-button{
+  top:25%;
+  width: 200rpx;
+  font-size: 30rpx;
+  align-self: center;
+}
+
+.layout_horizontal{
+  height: 100rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+}
+
+.layout_vertical{
+  height: 100rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+
+.title{
+  color: #3C3C3C;
+  font-size:25rpx;
+}
+
+.page-button{
+  margin: 10rpx;
+}
+.icon_style{
+  width: 10rpx;
+  height: 10rpx;
+}
