@@ -6,3 +6,15 @@
  position:fixed; 
  bottom:0; 
 }
+
+.cover-layout {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  margin-left:320px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
