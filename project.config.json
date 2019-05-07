@@ -11,6 +11,8 @@
 	"appid": "wx2530808a2bc5677a",
 	"projectname": "shunluba",
 	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

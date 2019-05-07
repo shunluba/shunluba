@@ -1,4 +1,4 @@
 {
   "navigationBarTitleText": "我",
-  "usingComponents": {}
+  "usingComponents": {"i-button": "../../dist/button/index"}
 }
