@@ -1,2 +1,6 @@
-<!--miniprogram/pages/PostConsume/PostConsume.wxml-->
-<text>miniprogram/pages/PostConsume/PostConsume.wxml</text>
+<view>
+  <text>出发地：{{start}}</text>
+</view>
+<view>
+  <text>目的地：{{desty}}</text>
+</view>

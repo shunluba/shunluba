@@ -2,21 +2,20 @@ Page({
   data: {
     latitude: 23.099994,
     longitude: 113.324520,
-    markers: [{
-      id: 1,
-      latitude: 23.099994,
-      longitude: 113.324520,
-      name: 'T.I.T 创意园'
-    }],
-    covers: [{
-      latitude: 23.099994,
-      longitude: 113.344520,
-      iconPath: '/image/location.png'
-    }, {
-      latitude: 23.099994,
-      longitude: 113.304520,
-      iconPath: '/image/location.png'
-    }]
+    start:'',
+    desty:'',
+  },
+  getstart: function (e) {
+    var start = e.detail.value;
+    this.setData({
+      start: start
+    });
+  },
+  getdesty: function (e) {
+    var desty = e.detail.value;
+    this.setData({
+      desty: desty
+    });
   },
   onReady: function (e) {
     this.mapCtx = wx.createMapContext('myMap')
@@ -60,8 +59,10 @@ Page({
   },
     //跳转到发布拼伞页面
   postCon: function (e) {
+    wx.setStorageSync('start', this.data.start);
+    wx.setStorageSync('desty', this.data.desty);
     wx.navigateTo({
-      url: '../PostConsume/PostConsume',
+      url: '../PostConsume/PostConsume'
     })
   },
 })
