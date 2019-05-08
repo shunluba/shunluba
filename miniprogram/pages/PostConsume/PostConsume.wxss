@@ -1,1 +1,33 @@
 /* miniprogram/pages/PostConsume/PostConsume.wxss */
+@import '../../dist/styles/index.wxss';
+.btm_view{
+ background-color: rgb(233, 230, 230);
+ width:100%;
+ position:fixed; 
+ bottom:0; 
+}
+
+.cover-layout {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  margin-left:320px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-radius{
+  border-radius: 15px;
+  margin: 0 0 3px 18px;
+  width: 270px;
+}
+.divLine{
+ background: rgb(214, 214, 214);
+ width: 730rpx;
+ margin-left: 10rpx; 
+ margin-left: 10prx; 
+ height: 3rpx;
+}

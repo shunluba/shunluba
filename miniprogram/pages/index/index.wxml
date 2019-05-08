@@ -60,5 +60,5 @@
 </wux-cell>
 -->
 <!--按钮-->
-<wux-button block type="dark" bindtap='postCon'>发布拼伞</wux-button>
+<wux-button block type="dark"  bindtap='postCon'>发布拼伞</wux-button>
 </view>

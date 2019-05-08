@@ -1,6 +1,47 @@
-<view>
-  <text>出发地：{{start}}</text>
+<view class="wux-text--center">
+请确认您的信息\n
 </view>
+
+<!--留白-->
+<wux-white-space size="large" />
 <view>
-  <text>目的地：{{desty}}</text>
+<!-- 表单 -->
+<form bindsubmit='res'>
+<!-- 出发地 -->
+  <text>出发地：</text>
+  <input type="text" placeholder="您还未输入" name="start" value="{{start}}" placeholder-style="color: gray" class="input-radius" maxlength="15" bindinput="getstart" />
+
+  <!-- 分割线 -->
+<view class="container">
+  <view class="divLine"></view>
+</view>
+
+<!-- 目的地 -->
+  <text>目的地：</text>
+  <input type="text" placeholder="您还未输入" name="desty" value="{{desty}}" placeholder-style="color: gray" class="input-radius" maxlength="15" bindinput="getdesty" />
+
+  <!-- 分割线 -->
+<view class="container">
+  <view class="divLine"></view>
+</view>
+
+<!-- 出发时间 -->
+<text>出发时间：</text>
+  <input type="text" placeholder="您还未输入" name="starttime" value="{{starttime}}" placeholder-style="color: gray" class="input-radius" maxlength="15" bindinput="getstarttime" />
+
+  <!-- 分割线 -->
+<view class="container">
+  <view class="divLine"></view>
+
+  <!--留白-->
+<wux-white-space size="large" />
+
+</view>
+  <!-- 两翼留白 -->
+ <wux-wing-blank size="default">
+
+ <!-- 提交到数据库按钮 -->
+<button block type="dark"  form-type='submit'>确认发布</button>
+</wux-wing-blank>
+</form>
 </view>

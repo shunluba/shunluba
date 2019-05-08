@@ -5,6 +5,7 @@ Page({
     start:'',
     desty:'',
   },
+  //获得出发地和目的地
   getstart: function (e) {
     var start = e.detail.value;
     this.setData({
@@ -17,6 +18,7 @@ Page({
       desty: desty
     });
   },
+  //地图
   onReady: function (e) {
     this.mapCtx = wx.createMapContext('myMap')
   },
