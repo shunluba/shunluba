@@ -1,2 +1,8 @@
-<!--miniprogram/pages/NearbyConsume/NearbyConsume.wxml-->
-<text>miniprogram/pages/NearbyConsume/NearbyConsume.wxml</text>
+<view >
+    <text >查询拼伞</text>
+    <view wx:for="{{consume_list}}">
+    <text>出发地="{{item.start}}"\n</text>
+    <text>目的地="{{item.desty}}"\n</text>
+    出发时间="{{item.starttime}}\n"
+    </view>
+</view>

@@ -39,7 +39,6 @@
 </view>
   <!-- 两翼留白 -->
  <wux-wing-blank size="default">
-
  <!-- 提交到数据库按钮 -->
 <button block type="dark"  form-type='submit'>确认发布</button>
 </wux-wing-blank>

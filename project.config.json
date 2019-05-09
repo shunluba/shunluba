@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -48,6 +48,13 @@
 					"id": -1,
 					"name": "发布拼伞",
 					"pathName": "pages/PostConsume/PostConsume",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "附近拼伞",
+					"pathName": "pages/NearbyConsume/NearbyConsume",
 					"scene": null
 				}
 			]

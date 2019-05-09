@@ -1,18 +1,31 @@
 // miniprogram/pages/NearbyConsume/NearbyConsume.js
+const db = wx.cloud.database({});
+const cont = db.collection('user');
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    consume_list:[],
   },
-
+//查询数据
+ 
+  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var _this = this;
+    db.collection('user').get({
+      success: res => {
+        console.log(res.data);
+        console.log(this);
+       this.setData({
+         consume_list:res.data,
+       })
+      }
+    })
   },
 
   /**

@@ -28,7 +28,7 @@ Page({
     });
   },
 
-  //数据库
+  //添加数据到数据库
   res: function (e) {
     const db = wx.cloud.database()
     db.collection('user').add({
