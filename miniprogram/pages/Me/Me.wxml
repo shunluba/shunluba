@@ -9,5 +9,15 @@
     </block>
 
 </view>
-<i-button type="success" shape="circle" size="small" bind:click="handleClick">我参与</i-button>
-<i-button type="success" shape="circle" size="small" bind:click="handleClick">我发布</i-button>
+
+
+<view>
+  <wux-row>
+    <wux-col span="6">
+      <wux-button block type='dark' bindtap='goToTake'>我参与</wux-button>
+    </wux-col>
+    <wux-col span="6">
+      <wux-button block type='dark' bindtap='goToPublish'>我发布</wux-button>
+    </wux-col>
+  </wux-row>
+</view>

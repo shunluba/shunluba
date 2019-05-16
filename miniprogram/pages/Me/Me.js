@@ -101,5 +101,21 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  /**
+   * 按钮跳转
+   */
+
+  goToTake: function(param){
+    wx.navigateTo({
+      url: '../takePartIn/takePartIn',
+    })
+   
+  },
+
+  goToPublish: function(param){
+    wx.navigateTo({
+      url: '../publish/public',
+    })
   }
 })

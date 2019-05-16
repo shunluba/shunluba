@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/Me/Me",
     "pages/PostConsume/PostConsume",
-    "pages/NearbyConsume/NearbyConsume"
+    "pages/NearbyConsume/NearbyConsume",
+    "pages/takePartIn/takePartIn",
+    "pages/publish/public"
   ],
   "tabBar": {
     "list": [
@@ -38,5 +40,6 @@
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
